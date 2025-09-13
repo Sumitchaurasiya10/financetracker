@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   //baseURL: "http://localhost:5000/api", // backend URL
-  baseURL: "https://financetracker-yi5q.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // Automatically attach token to requests
