@@ -60,7 +60,6 @@ Update \`.env\` with your configuration:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
-NODE_ENV=development
 \`\`\`
 
 Run backend:  
