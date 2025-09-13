@@ -465,7 +465,7 @@ export default function TransactionList() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-300 text-sm font-medium mb-2">Total Income</p>
-                  <p className="text-2xl font-bold text-green-400">${totalIncome.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-green-400">₹{totalIncome.toLocaleString()}</p>
                 </div>
                 <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
                   <TrendingUp className="w-6 h-6 text-green-400" />
@@ -477,7 +477,7 @@ export default function TransactionList() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-gray-300 text-sm font-medium mb-2">Total Expenses</p>
-                  <p className="text-2xl font-bold text-red-400">${totalExpense.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-red-400">₹{totalExpense.toLocaleString()}</p>
                 </div>
                 <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
                   <TrendingDown className="w-6 h-6 text-red-400" />
@@ -490,7 +490,7 @@ export default function TransactionList() {
                 <div>
                   <p className="text-gray-300 text-sm font-medium mb-2">Balance</p>
                   <p className={`text-2xl font-bold ${balance >= 0 ? 'text-indigo-400' : 'text-red-400'}`}>
-                    ${balance.toLocaleString()}
+                    ₹{balance.toLocaleString()}
                   </p>
                 </div>
                 <div className="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center">
@@ -758,7 +758,7 @@ export default function TransactionList() {
                           </td>
                           <td className="px-6 py-4">
                             <span className={`text-lg font-bold ${transaction.type === 'income' ? 'text-green-400' : 'text-red-400'}`}>
-                              {transaction.type === "expense" ? "-" : "+"}${transaction.amount.toLocaleString()}
+                              {transaction.type === "expense" ? "-" : "+"}₹{transaction.amount.toLocaleString()}
                             </span>
                           </td>
                           <td className="px-6 py-4">
