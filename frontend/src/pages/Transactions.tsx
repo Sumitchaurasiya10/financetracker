@@ -582,7 +582,7 @@ export default function TransactionList() {
 
                   {/* Add Transaction Button */}
                   <Link
-                    to="/add-transaction"
+                    to="/add"
                     className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-3 px-6 rounded-xl font-semibold shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400/50 group relative overflow-hidden flex items-center"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
